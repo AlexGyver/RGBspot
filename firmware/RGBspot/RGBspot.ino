@@ -166,7 +166,7 @@ void updateDisp() {
 }
 
 void updateLED() {
-  // setWheel принимает 0-1530, у нас 8 бит
+  // setWheel принимает 0-1530, у нас 8 бит - умножаем на 6 (1530 == 255 * 6)
   if (!settings.mode) led.setWheel(settings.hue * 6, settings.hueB);
   else led.setKelvin(settings.temp * 100, settings.tempB);
 }

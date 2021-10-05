@@ -1,3 +1,6 @@
+#ifndef _SevSeg_h
+#define _SevSeg_h
+
 #define SS_CATHODE 0
 #define SS_ANODE 1
 #define SS_PRD 1000
@@ -58,3 +61,4 @@ class SevSeg {
     uint8_t _count = 0;
     uint32_t tmr = 0;
 };
+#endif
